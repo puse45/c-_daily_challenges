@@ -35,6 +35,10 @@ public:
 };
 template <typename T, typename  U> int Person<T,U>::numOfPeople;
 
+void increment(int& value){
+    value++;
+}
+
 
 
 int main()
@@ -58,6 +62,9 @@ int main()
     Animal animal;
     Print(animal);
      */
+
+    /*
+    // Iteration lib
 
     std::vector<int> num2={1,4,5,6};
     std::vector<int>::iterator itr;
@@ -87,6 +94,54 @@ int main()
     for(auto &i : num2){
         std::cout<<"Insert values to vector "<<i<<std::endl;
     }
+
+    */
+
+    /*
+    // Const - key word promise given that nothing is going to change but can be broken
+
+    // variable value can be changed
+    int a = 5;
+    a = 2;
+
+    // variable value can't be changed by using const
+    const int b =5;
+
+    // can be used to set values permanent to variables
+
+    const int max_age = 80;
+     */
+
+
+    /*
+
+    // Ponters '*' (Memory Pointer) are integer numbers
+    int var = 8;
+    int *ptr = &var;
+    *ptr = 4;
+    // Dereference
+    std::cout<< var<<std::endl;
+    std::cout<< *ptr<<std::endl;
+
+
+
+    // Reference '&' takes the memory address of the assigned variable
+
+    int a =5;
+    int& ref = a;
+    ref = 10;
+    std::cout << a <<std::endl;
+
+    // Reference in function
+
+    int c =13;
+    increment(c);
+    std::cout<< c <<std::endl;
+
+    */
+
+
+
 
     return 0;
 }
