@@ -2,6 +2,8 @@
 #include <iterator>
 #include <vector>
 #include "Animal.h"
+#include "Player.h"
+#include "str_player.h"
 
 void Print(Animal& a){
     std::cout<< "Animal name is "<<a.getName()<<std::endl;
@@ -126,19 +128,33 @@ int main()
 
 
     // Reference '&' takes the memory address of the assigned variable
-
     int a =5;
     int& ref = a;
     ref = 10;
     std::cout << a <<std::endl;
 
     // Reference in function
-
     int c =13;
     increment(c);
     std::cout<< c <<std::endl;
 
     */
+
+    /*
+    // Instantiating Player Class
+    // Default visibility private
+    Player play;
+    play.speed = 30;
+    play.move(4,5);
+     */
+
+    /*
+    // Instantiating strPlay Struct
+    // Default visibility public
+    str_Player strPlayer;
+    strPlayer.speed = 40;
+    strPlayer.move(5,6);
+     */
 
 
 
